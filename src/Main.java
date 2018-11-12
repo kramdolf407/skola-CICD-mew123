@@ -49,7 +49,7 @@ class OnlineTest extends JFrame implements ActionListener
                 count=count+1;
             current++;
             set();
-            if(current==9)
+            if(current==5) // lägg till sista frågans nummer
             {
                 b1.setEnabled(false);
                 b2.setText("Result");
@@ -65,7 +65,7 @@ class OnlineTest extends JFrame implements ActionListener
             x++;
             current++;
             set();
-            if(current==9)
+            if(current==5) // lägg till sista frågans nummer
                 b2.setText("Result");
             setVisible(false);
             setVisible(true);
@@ -96,59 +96,54 @@ class OnlineTest extends JFrame implements ActionListener
     }
     void set()
     {
+        Questions questions = new Questions();
         jb[4].setSelected(true);
         if(current==0)
         {
-            l.setText("Que1: Which one among these is not a primitive datatype?");
-            jb[0].setText("int");jb[1].setText("Float");jb[2].setText("boolean");jb[3].setText("char");
+            l.setText(questions.returnQuestion(0)[0]);
+            jb[0].setText(questions.returnQuestion(0)[1]);
+            jb[1].setText(questions.returnQuestion(0)[2]);
+            jb[2].setText(questions.returnQuestion(0)[3]);
+            jb[3].setText(questions.returnQuestion(0)[4]);
         }
         if(current==1)
-        {
-            l.setText("Que2: Which class is available to all the class automatically?");
-            jb[0].setText("Swing");jb[1].setText("Applet");jb[2].setText("Object");jb[3].setText("ActionEvent");
+        {   l.setText(questions.returnQuestion(1)[0]);
+            jb[0].setText(questions.returnQuestion(1)[1]);
+            jb[1].setText(questions.returnQuestion(1)[2]);
+            jb[2].setText(questions.returnQuestion(1)[3]);
+            jb[3].setText(questions.returnQuestion(1)[4]);
         }
         if(current==2)
         {
-            l.setText("Que3: Which package is directly available to our class without importing it?");
-            jb[0].setText("swing");jb[1].setText("applet");jb[2].setText("net");jb[3].setText("lang");
+            l.setText(questions.returnQuestion(2)[0]);
+            jb[0].setText(questions.returnQuestion(2)[1]);
+            jb[1].setText(questions.returnQuestion(2)[2]);
+            jb[2].setText(questions.returnQuestion(2)[3]);
+            jb[3].setText(questions.returnQuestion(2)[4]);
         }
         if(current==3)
         {
-            l.setText("Que4: String class is defined in which package?");
-            jb[0].setText("lang");jb[1].setText("Swing");jb[2].setText("Applet");jb[3].setText("awt");
+            l.setText(questions.returnQuestion(3)[0]);
+            jb[0].setText(questions.returnQuestion(3)[1]);
+            jb[1].setText(questions.returnQuestion(3)[2]);
+            jb[2].setText(questions.returnQuestion(3)[3]);
+            jb[3].setText(questions.returnQuestion(3)[4]);
         }
         if(current==4)
         {
-            l.setText("Que5: Which institute is best for java coaching?");
-            jb[0].setText("Utek");jb[1].setText("Aptech");jb[2].setText("SSS IT");jb[3].setText("jtek");
+            l.setText(questions.returnQuestion(4)[0]);
+            jb[0].setText(questions.returnQuestion(4)[1]);
+            jb[1].setText(questions.returnQuestion(4)[2]);
+            jb[2].setText(questions.returnQuestion(4)[3]);
+            jb[3].setText(questions.returnQuestion(4)[4]);
         }
         if(current==5)
         {
-            l.setText("Que6: Which one among these is not a keyword?");
-            jb[0].setText("class");jb[1].setText("int");jb[2].setText("get");jb[3].setText("if");
-        }
-        if(current==6)
-        {
-            l.setText("Que7: Which one among these is not a class? ");
-            jb[0].setText("Swing");jb[1].setText("Actionperformed");jb[2].setText("ActionEvent");
-            jb[3].setText("Button");
-        }
-        if(current==7)
-        {
-            l.setText("Que8: which one among these is not a function of Object class?");
-            jb[0].setText("toString");jb[1].setText("finalize");jb[2].setText("equals");
-            jb[3].setText("getDocumentBase");
-        }
-        if(current==8)
-        {
-            l.setText("Que9: which function is not present in Applet class?");
-            jb[0].setText("init");jb[1].setText("main");jb[2].setText("start");jb[3].setText("destroy");
-        }
-        if(current==9)
-        {
-            l.setText("Que10: Which one among these is not a valid component?");
-            jb[0].setText("JButton");jb[1].setText("JList");jb[2].setText("JButtonGroup");
-            jb[3].setText("JTextArea");
+            l.setText(questions.returnQuestion(5)[0]);
+            jb[0].setText(questions.returnQuestion(5)[1]);
+            jb[1].setText(questions.returnQuestion(5)[2]);
+            jb[2].setText(questions.returnQuestion(5)[3]);
+            jb[3].setText(questions.returnQuestion(5)[4]);
         }
         l.setBounds(30,40,450,20);
         for(int i=0,j=0;i<=90;i+=30,j++)
@@ -167,14 +162,6 @@ class OnlineTest extends JFrame implements ActionListener
         if(current==4)
             return(jb[2].isSelected());
         if(current==5)
-            return(jb[2].isSelected());
-        if(current==6)
-            return(jb[1].isSelected());
-        if(current==7)
-            return(jb[3].isSelected());
-        if(current==8)
-            return(jb[1].isSelected());
-        if(current==9)
             return(jb[2].isSelected());
         return false;
     }
