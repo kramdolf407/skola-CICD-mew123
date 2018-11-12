@@ -178,6 +178,7 @@ class OnlineTest extends JFrame implements ActionListener
             return(jb[2].isSelected());
         return false;
     }
+
     public static void main(String s[])
     {
         new OnlineTest("Online Test Of Java");
