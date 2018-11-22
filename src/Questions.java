@@ -9,7 +9,7 @@ public class Questions {
     String[] q7 = {"What is 5 + 3? ", "8", "1", "4", "6"};
     String[] q8 = {"Is documentation good? ", "No", "Absolutely not", "Yes", "Don't know"};
     String[] q9 = {"What is used to define a block of code (body of loop, function etc.) in Python?", "Curly braces", "Parenthesis", "Indentation", "Quotation"};
-
+    String[] q10 = {"Which one represents a single line comment in Java ?", "//Comment","/*comment*/","@comment","!comment"};
     public String[] returnQuestion(int question_id) {
         String[] noValue = new String[5];
         if (question_id == 0) {
@@ -30,7 +30,10 @@ public class Questions {
             return q8;
         } else if (question_id == 8) {
             return q9;
-        }
+        } else if (question_id == 9){
+              return q10;
+            }
+
 
         else return noValue;
 

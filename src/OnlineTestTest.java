@@ -24,5 +24,7 @@ class OnlineTestTest {
         assertTrue(onlineTest.check());
         onlineTest.jb[2].setSelected(true);
         assertFalse(onlineTest.check());
+
+
     }
 }
