@@ -49,7 +49,7 @@ class OnlineTest extends JFrame implements ActionListener
                 count=count+1;
             current++;
             set();
-            if(current==7) // lägg till sista frågans nummer
+            if(current==8) // lägg till sista frågans nummer
             {
                 b1.setEnabled(false);
                 b2.setText("Result");
@@ -65,7 +65,7 @@ class OnlineTest extends JFrame implements ActionListener
             x++;
             current++;
             set();
-            if(current==7) // lägg till sista frågans nummer
+            if(current==8) // lägg till sista frågans nummer
                 b2.setText("Result");
             setVisible(false);
             setVisible(true);
@@ -163,7 +163,14 @@ class OnlineTest extends JFrame implements ActionListener
             jb[2].setText(questions.returnQuestion(7)[3]);
             jb[3].setText(questions.returnQuestion(7)[4]);
         }
-
+        if(current==8)
+        {
+            l.setText(questions.returnQuestion(8)[0]);
+            jb[0].setText(questions.returnQuestion(8)[1]);
+            jb[1].setText(questions.returnQuestion(8)[2]);
+            jb[2].setText(questions.returnQuestion(8)[3]);
+            jb[3].setText(questions.returnQuestion(8)[4]);
+        }
         l.setBounds(30,40,450,20);
         for(int i=0,j=0;i<=90;i+=30,j++)
             jb[j].setBounds(50,80+i,200,20);
@@ -188,6 +195,8 @@ class OnlineTest extends JFrame implements ActionListener
             return(jb[0].isSelected());
         if(current==7)
             return(jb[2].isSelected());
+        if(current==8)
+            return(jb[3].isSelected());
         return false;
     }
     public static void main(String s[])

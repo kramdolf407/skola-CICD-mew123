@@ -8,6 +8,7 @@ public class Questions {
     String[] q6 = {"Which one among these is not a keyword?", "class", "int", "get", "if"};
     String[] q7 = {"What is 5 + 3? ", "8", "1", "4", "6"};
     String[] q8 = {"Is documentation good? ", "No", "Absolutely not", "Yes", "Don't know"};
+    String[] q9 = {"What is used to define a block of code (body of loop, function etc.) in Python?", "Curly braces", "Parenthesis", "Indentation", "Quotation"};
 
     public String[] returnQuestion(int question_id) {
         String[] noValue = new String[5];
@@ -27,6 +28,8 @@ public class Questions {
             return q7;
         } else if (question_id == 7) {
             return q8;
+        } else if (question_id == 8) {
+            return q9;
         }
 
         else return noValue;

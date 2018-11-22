@@ -17,5 +17,7 @@ class QuestionsTest {
         assertEquals("lang", str4);
         String str5 = question.returnQuestion(4)[4];
         assertEquals("jtek", str5);
+        String str6 = question.returnQuestion(8)[2];
+        assertEquals("Parenthesis", str6);
     }
 }
