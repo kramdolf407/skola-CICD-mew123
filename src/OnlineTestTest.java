@@ -17,6 +17,11 @@ class OnlineTestTest {
         assertTrue(onlineTest.check());
         onlineTest.jb[4].setSelected(true);
         assertFalse(onlineTest.check());
+        onlineTest.current = 7;
+        onlineTest.jb[1].setSelected(true);
+        assertFalse(onlineTest.check());
+
+
 
     }
 }
