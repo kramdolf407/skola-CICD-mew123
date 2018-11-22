@@ -6,7 +6,8 @@ public class Questions {
     String[] q4 = {"String class is defined in which package?", "lang", "Swing", "Applet", "awt"};
     String[] q5 = {"Which institute is best for java coaching?", "Utek", "Aptech", "SSS IT", "jtek"};
     String[] q6 = {"Which one among these is not a keyword?", "class", "int", "get", "if"};
-
+    String[] q7 = {"What is 5 + 3? ", "8", "1", "4", "6"};
+    String[] q8 = {"Is documentation good? ", "No", "Absolutely not", "Yes", "Don't know"};
 
     public String[] returnQuestion(int question_id) {
         String[] noValue = new String[5];
@@ -22,6 +23,10 @@ public class Questions {
             return q5;
         } else if (question_id == 5) {
             return q6;
+        } else if (question_id == 6) {
+            return q7;
+        } else if (question_id == 7) {
+            return q8;
         }
 
         else return noValue;

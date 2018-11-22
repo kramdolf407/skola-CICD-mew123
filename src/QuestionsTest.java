@@ -13,5 +13,9 @@ class QuestionsTest {
         assertEquals("Swing", str2);
         String str3 = question.returnQuestion(2)[3];
         assertEquals("net", str3);
+        String str4 = question.returnQuestion(3)[1];
+        assertEquals("lang", str4);
+        String str5 = question.returnQuestion(4)[4];
+        assertEquals("jtek", str5);
     }
 }
