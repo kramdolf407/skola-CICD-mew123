@@ -12,11 +12,17 @@ class OnlineTestTest {
         assertTrue(onlineTest.check());
         onlineTest.jb[2].setSelected(true);
         assertFalse(onlineTest.check());
+
         onlineTest.current = 1;
         onlineTest.jb[2].setSelected(true);
         assertTrue(onlineTest.check());
         onlineTest.jb[4].setSelected(true);
         assertFalse(onlineTest.check());
 
+        onlineTest.current = 2;
+        onlineTest.jb[3].setSelected(true);
+        assertTrue(onlineTest.check());
+        onlineTest.jb[2].setSelected(true);
+        assertFalse(onlineTest.check());
     }
 }
