@@ -10,6 +10,9 @@ public class Questions {
     String[] q8 = {"Is documentation good? ", "No", "Absolutely not", "Yes", "Don't know"};
     String[] q9 = {"What is used to define a block of code (body of loop, function etc.) in Python?", "Curly braces", "Parenthesis", "Indentation", "Quotation"};
     String[] q10 = {"Which one represents a single line comment in Java ?", "//Comment","/*comment*/","@comment","!comment"};
+    String[] q11 = {"Which is the most fun programming language?", "C","Java","Python","Swift"};
+
+
     public String[] returnQuestion(int question_id) {
         String[] noValue = new String[5];
         if (question_id == 0) {
@@ -31,11 +34,11 @@ public class Questions {
         } else if (question_id == 8) {
             return q9;
         } else if (question_id == 9){
-              return q10;
-            }
-
+            return q10;
+        } else if (question_id == 10){
+            return q11;
+        }
 
         else return noValue;
-
     }
 }
