@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfb4f874-7b51-4bea-87d4-698b4285fa80" name="Default Changelist" comment="Lagt till frågor samt test-cases.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="cfb4f874-7b51-4bea-87d4-698b4285fa80" name="Default Changelist" comment="Added Maven.">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/OnlineTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Questions.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/OnlineTestTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/QuestionsTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/skola-CICD-1/OnlineTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/skola-CICD-1/OnlineTestTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/skola-CICD-1/Questions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/skola-CICD-1/QuestionsTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/skola-CICD-1.iml" afterPath="$PROJECT_DIR$/skola-CICD-1.iml" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/OnlineTestTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Questions.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/QuestionsTest.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -99,8 +91,8 @@
       <file leaf-file-name="OnlineTestTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/OnlineTestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="368">
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -444,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542880110171</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Maven.">
+      <created>1543534971565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543534971565</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -544,7 +543,8 @@
     <MESSAGE value="Vi har lyft ut frågorna till en separat klass" />
     <MESSAGE value="Default Changelist" />
     <MESSAGE value="Lagt till frågor samt test-cases." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt till frågor samt test-cases." />
+    <MESSAGE value="Added Maven." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Maven." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -641,8 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/OnlineTestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="368">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
